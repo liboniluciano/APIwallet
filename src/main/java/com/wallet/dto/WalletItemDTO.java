@@ -4,6 +4,7 @@ import lombok.Data;
 import org.hibernate.validator.constraints.Length;
 
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 import java.math.BigDecimal;
 import java.util.Date;
 
@@ -16,6 +17,7 @@ public class WalletItemDTO {
     @NotNull(message = "Insira uma data")
     private Date date;
     @NotNull(message = "Informe um tipo")
+    @Pattern(regexp = "^(ENTRADA|SAÍDA)$", message = "Para o tipo serão aceitos os valores ENTRADA ou SAÍDA")
     private String type;
     @NotNull(message = "Informe uma descrição")
     @Length(min = 50, message = "A descrição deve ter no mínimo 50 caracteres")
