@@ -41,13 +41,14 @@ public class WalletItemController {
         }
 
         WalletItem wi = service.save(this.convertDtoToEntity(dto));
+        response.setData(this.convertEntityToDto(wi));
         return ResponseEntity.status(HttpStatus.CREATED).body(response);
     }
 
     @GetMapping(value = "/{wallet}")
     public ResponseEntity<Response<Page<WalletItemDTO>>> findByBetWeenDates(@PathVariable("wallet") Long wallet,
               @RequestParam("startDate") @DateTimeFormat(pattern = "dd-MM-yyyyy") Date startDate,
-              @RequestParam("startDate") @DateTimeFormat(pattern = "dd-MM-yyyyy") Date endDate,
+              @RequestParam("endDate") @DateTimeFormat(pattern = "dd-MM-yyyyy") Date endDate,
               @RequestParam(name = "page", defaultValue = "0") int page)   {
 
         Response<Page<WalletItemDTO>> response = new Response<Page<WalletItemDTO>>();

@@ -22,7 +22,7 @@ public class WalletItemDTO {
     @Pattern(regexp = "^(ENTRADA|SAÍDA)$", message = "Para o tipo serão aceitos os valores ENTRADA ou SAÍDA")
     private String type;
     @NotNull(message = "Informe uma descrição")
-    @Length(min = 50, message = "A descrição deve ter no mínimo 50 caracteres")
+    @Length(min = 5, message = "A descrição deve ter no mínimo 50 caracteres")
     private String description;
     @NotNull(message = "Informe um valor")
     private BigDecimal value;
