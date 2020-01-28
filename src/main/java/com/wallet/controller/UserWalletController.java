@@ -5,7 +5,7 @@ import com.wallet.entity.User;
 import com.wallet.entity.UserWallet;
 import com.wallet.entity.Wallet;
 import com.wallet.response.Response;
-import com.wallet.service.UserWalletService;
+import com.wallet.security.service.UserWalletService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

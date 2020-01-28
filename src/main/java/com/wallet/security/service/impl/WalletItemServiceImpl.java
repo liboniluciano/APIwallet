@@ -1,8 +1,8 @@
-package com.wallet.service.impl;
+package com.wallet.security.service.impl;
 
 import com.wallet.entity.WalletItem;
 import com.wallet.repository.WalletItemRepository;
-import com.wallet.service.WalletItemService;
+import com.wallet.security.service.WalletItemService;
 import com.wallet.util.enums.TypeEnum;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

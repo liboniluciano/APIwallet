@@ -4,7 +4,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.wallet.dto.UserDTO;
 import com.wallet.entity.User;
-import com.wallet.service.UserService;
+import com.wallet.security.service.UserService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
 import org.mockito.BDDMockito;

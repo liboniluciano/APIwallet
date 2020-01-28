@@ -1,4 +1,4 @@
-package com.wallet.service;
+package com.wallet.security.service;
 
 import com.wallet.entity.WalletItem;
 import com.wallet.util.enums.TypeEnum;
