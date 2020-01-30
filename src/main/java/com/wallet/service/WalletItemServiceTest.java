@@ -1,5 +1,5 @@
-package com.wallet.security.service;
-
+package com.wallet.service;
+/*
 import com.wallet.entity.Wallet;
 import com.wallet.entity.WalletItem;
 import com.wallet.repository.WalletItemRepository;
@@ -46,7 +46,7 @@ public class WalletItemServiceTest {
         assertEquals(response.getValue().compareTo(VALUE), 0);
     }
 
-    /*@Test
+    @Test
     public void testFindBetweenDates() {
         List<WalletItem> list = new ArrayList<>();
         list.add(getMockWalletItem());
@@ -61,7 +61,7 @@ public class WalletItemServiceTest {
         assertEquals(response.getContent().get(0).getDescription(), DESCRIPTION);
 
     }
-    */
+
 
 
 
@@ -75,3 +75,5 @@ public class WalletItemServiceTest {
 
 
 }
+
+ */

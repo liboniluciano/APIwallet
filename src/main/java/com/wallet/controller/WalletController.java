@@ -3,7 +3,7 @@ package com.wallet.controller;
 import com.wallet.dto.WalletDTO;
 import com.wallet.entity.Wallet;
 import com.wallet.response.Response;
-import com.wallet.security.service.WalletService;
+import com.wallet.service.WalletService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
